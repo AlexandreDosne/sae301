@@ -86,6 +86,9 @@ class Manifestation
 
     public function getAffiche(): ?string
     {
+        if (empty($this->affiche))
+            return 'placeholder';
+
         return $this->affiche;
     }
 

@@ -1,6 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>Listing des tickets</h1>
-
+<div class="container">
+    <h1>Listing des événements</h1>
+    <div id="listing" class="row">
+        {% for manif in manifestations %}
+        <div class="col-sm-6">
+            <div class="card mx-auto">
+                <img src="/assets/img/affiches/{{ manif.affiche }}.jpg" class="card-img-top"
+                    alt="Affiche de {{ manif.titre }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ manif.titre }}</h5>
+                    <p class="card-text">
+                        <em class="h6">{{ manif.horaire }}</em><br />
+                        <span class="h5">{{ manif.description }}</span>
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Genre : {{ manif.genre }}</li>
+                    <li class="list-group-item">Casting : {{ manif.casting }}</li>
+                </ul>
+                <div class="card-body">
+                    <a href="/listing/{{ manif.id }}" class="btn btn-primary">Voir</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
