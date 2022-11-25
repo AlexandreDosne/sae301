@@ -1,8 +1,8 @@
 
-.card {
-    width : 18em;
-    margin: 0.2em;
-}
+// .card {
+//     width : 18em;
+//     margin: 0.2em;
+// }
 
 #listingDetailAffiche {
     width        : 25vw;
@@ -13,7 +13,61 @@
     border-radius: 32px;
 }
 
+.filtre h3{
+    margin-left: 78px;
+}
+.container{
+    // display: grid;
+    // grid-template-columns:25vw 70vw  ;
+    // justify-items: center;
+    // grid-gap: 1em;
+}
 #listing {
     margin-left : auto;
     margin-right: auto;
+}
+.card__event{
+display: flex;
+flex-direction: row;
+margin-top: 3rem;
+padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+// border: 0.2px solid #000;
+border-radius: 15px;
+box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
+-webkit-box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
+-moz-box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
+}
+.event__listing{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card-body{
+    margin-left: 1rem;
+}
+.card-img-top{
+    border-top-left-radius:13px ;
+    border-bottom-left-radius:13px ;
+}
+.list-info{
+    display: flex;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    padding-right: 0.2rem;
+    justify-content: center
+}
+.btn__body{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.btn__listing{
+    text-decoration: none;
+    color: #fff;
+    border: rgba(0, 0, 0, 0.526) 1px solid;
+    border-radius: 7px   ;
+    background-color: #0b3f5f;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }

@@ -1,8 +1,3 @@
-.card {
-  width: 18em;
-  margin: 0.2em;
-}
-
 #listingDetailAffiche {
   width: 25vw;
   margin-top: 1em;
@@ -12,9 +7,64 @@
   border-radius: 32px;
 }
 
+.filtre h3 {
+  margin-left: 78px;
+}
+
 #listing {
   margin-left: auto;
   margin-right: auto;
+}
+
+.card__event {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  border-radius: 15px;
+  box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+}
+
+.event__listing {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-body {
+  margin-left: 1rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.list-info {
+  display: flex;
+  margin-left: 2.3rem;
+  margin-right: 2.3rem;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: column;
+  padding-right: 0.2rem;
+  justify-content: center;
+}
+
+.btn__body {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.btn__listing {
+  text-decoration: none;
+  color: #fff;
+  border: rgba(0, 0, 0, 0.526) 1px solid;
+  border-radius: 7px;
+  background-color: #0b3f5f;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
 * {
@@ -38,7 +88,9 @@ body navbar {
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: -2px 3px 20px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
 }
 body .navbar__container {
   display: flex;
@@ -51,7 +103,7 @@ body .navbar__container {
   padding: 0 30px;
 }
 body .navbar__logo {
-  color: rgb(23, 83, 246);
+  color: #0b3f5f;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -82,4 +134,9 @@ body .navbar__links {
   text-decoration: none;
   height: 100%;
   padding: 0.5rem 1rem;
+}
+body .navbar__links:hover {
+  color: #0b3f5f;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

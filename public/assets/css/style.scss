@@ -22,8 +22,9 @@ body {
         position: sticky;
         top: 0;
         z-index: 999;
-        -webkit-box-shadow: -2px 3px 20px 0px rgba(0,0,0,0.68); 
-        box-shadow: -2px 3px 20px 0px rgba(0,0,0,0.68);
+        box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
+        -webkit-box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
+        -moz-box-shadow: -1px 10px 24px -8px rgba(0,0,0,0.38);
         
     }
         .navbar__container {
@@ -37,7 +38,7 @@ body {
             padding: 0 30px;
         }
         .navbar__logo {
-            color: rgb(23, 83, 246);
+            color: #0b3f5f  ;
             justify-self: flex-start;
             cursor: pointer;
             font-size: 1.5rem;
@@ -69,4 +70,12 @@ body {
             height: 100%;
             padding: 0.5rem 1rem;
         }
+
+
+        .navbar__links:hover{
+            color: #0b3f5f;
+            text-decoration: underline;
+            transition: all 0.2s ease-in-out;
+        }
+   
 }
