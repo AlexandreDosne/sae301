@@ -15,6 +15,42 @@
         {% endblock %}
     </head>
     <body>
+
+    <navbar>
+        <div class="navbar__container">
+            <a class="navbar__logo" href="/">LOGO</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a class="navbar__links" href="/">Accueil</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__links" href="/listing">Evénement</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a  class="navbar__links" href="/">Nos Salles</a>
+                    </li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="navbar__item">
+                            <a class="navbar__links" href="/">Admin</a>
+                        </li>
+                    {% endif %}
+                    {% if app.user %}
+                        <li  class="navbar__item">
+                            <a class="navbar__links" href="/logout">Logout</a>
+                        </li>
+                    {% else %}
+                        <li class="navbar__item">
+                            <a class="navbar__links" href="/login">Login</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__links" href="/register">Register</a>
+                        </li>
+                    {% endif %}
+                    {# <li class="navbar__item"><a href="{{ path('contact') }}">Contact</a></li> #}
+                    {# <li class="navbar__item"><a href="{{ path('panier') }}">Panier</a></li> #}
+            </ul>
+        </div>
+    </navbar>
         {% block body %}{% endblock %}
         <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     </body>
