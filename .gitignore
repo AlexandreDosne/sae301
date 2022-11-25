@@ -21,3 +21,6 @@
 
 # Symfony.exe for local testing
 /symfony.exe
+
+# PHP version for symfoni CLI
+/.php-version
