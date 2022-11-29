@@ -79,31 +79,83 @@ body {
         }
    
         form{
-            padding-top: 10rem;
+            padding: 5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        fieldset{
-            border: 1px solid #0b3f5f;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 1rem 1rem;
-        }
             .label__mdp{
                 padding-top: 1rem;
             }
-        .btn__login{
-            background-color: #0b3f5f;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 0.5rem 1rem;
-            margin-top: 1rem;
-            cursor: pointer;
+
+           
+        .login__carte{
+            display: flex;
+            height: 20rem;
+            border: grey solid 1px;
+            border-radius: 10px;
+           
+
+            .login__creation{
+                padding: 3rem ;  
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-top-left-radius:10px ;
+                border-bottom-left-radius:10px ;
+                background: #C49862;
+                
+            }
+            
+            .login__connexion{
+                padding-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            input{
+                margin: 1rem;
+                padding: 0.5rem;
+                background-color: rgb(203, 203, 203);
+                border-radius: 5px;
+                width: 20rem;
+                border: none;
+                outline: none;
+            }
+            input::placeholder{
+                color: #FFF;
+            }
+            .btn__login{
+                background-color: #0b3f5f;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                padding: 0.5rem 1rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                font-size: 15pt;
+                text-decoration: none;
+            }
+            .btn__register{
+                background-color: transparent;
+                color: #fff;
+                border: #0b3f5f solid 1px;
+                border-radius: 20px;
+                padding: 0.5rem 1rem;
+                margin-top: 1rem;
+                cursor: pointer;
+                font-size: 15pt;
+                text-decoration: none;
+            }
+            .btn__register:hover{
+                background-color: #0b3f5f;
+                transition: all 0.3s ease-in-out;
+            }
+            .crea__text{
+                padding: 1rem;
+            }
         }
+        
 }

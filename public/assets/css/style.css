@@ -227,29 +227,80 @@ body .navbar__links:hover {
   transition: all 0.2s ease-in-out;
 }
 body form {
-  padding-top: 10rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-body fieldset {
-  border: 1px solid #0b3f5f;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem 1rem;
 }
 body .label__mdp {
   padding-top: 1rem;
 }
-body .btn__login {
+body .login__carte {
+  display: flex;
+  height: 20rem;
+  border: grey solid 1px;
+  border-radius: 10px;
+}
+body .login__carte .login__creation {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #C49862;
+}
+body .login__carte .login__connexion {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .login__carte input {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 5px;
+  width: 20rem;
+  border: none;
+  outline: none;
+}
+body .login__carte input::-moz-placeholder {
+  color: #FFF;
+}
+body .login__carte input:-ms-input-placeholder {
+  color: #FFF;
+}
+body .login__carte input::placeholder {
+  color: #FFF;
+}
+body .login__carte .btn__login {
   background-color: #0b3f5f;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+}
+body .login__carte .btn__register {
+  background-color: transparent;
+  color: #fff;
+  border: #0b3f5f solid 1px;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+}
+body .login__carte .btn__register:hover {
+  background-color: #0b3f5f;
+  transition: all 0.3s ease-in-out;
+}
+body .login__carte .crea__text {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

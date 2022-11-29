@@ -13,12 +13,16 @@
             You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
     {% endif %}
-    <fieldset>
-        <legend>Connexion</legend>
-        <label for="inputEmail">Email</label>
-        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-        <label class="label__mdp" for="inputPassword">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+    <div class="login__carte">
+        <div class="login__creation">
+            <h3 class="crea__titre">Créer un compte</h3>
+            <p class="crea__text">Créez un compte afin de commander un billet</p>
+            <a class="btn__register" href="/register">Créer un compte</a>
+        </div>
+        <div class="login__connexion">
+        <h3>Connecter vous <br />à Avignon Tickets</h3>
+        <input placeholder="Email..." type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+        <input placeholder="Mot de passe..." type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
     
         <input type="hidden" name="_csrf_token"
            value="{{ csrf_token('authenticate') }}"
@@ -37,8 +41,9 @@
     #}
 
         <button class="btn__login" type="submit">
-            Sign in
+            Se connecter
         </button>
-    </fieldset>
+        </div>
+    </div>
 </form>
 {% endblock %}
