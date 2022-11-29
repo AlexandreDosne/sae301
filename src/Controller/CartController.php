@@ -17,10 +17,10 @@ class CartController extends AbstractController
         );
     }
 
-    #[Route("/cart/add/{id}", name: "app_cart_add")]
-    public function cartAdd(int $id, ManifestationRepository $repo): \Symfony\Component\HttpFoundation\Response
-    {
-        // TODO: Add item to cart
-        return $this->redirectToRoute('app_cart');
-    }
+    // #[Route("/cart/add/{id}", name: "app_cart_add")]
+    // public function cartAdd(int $id, ManifestationRepository $repo): \Symfony\Component\HttpFoundation\Response
+    // {
+    //     // TODO: Add item to cart
+    //     return $this->redirectToRoute('app_cart');
+    // }
 }

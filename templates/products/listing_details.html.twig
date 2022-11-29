@@ -22,10 +22,11 @@
         </p>
     </div>
     <div class="btn__bodydetails">
-        <a href="/cart/add/{{ manif.id }}" class="btn__acheter">Acheter un ticket</a>
+        <a href="#" id="btnAcheterTicket" class="btn__acheter">Acheter un ticket</a>
     </div>
     <div class="btn__bodydetails">
     <a href="/listing" class="btn__acheter">Retour à la liste</a>
     </div>
 </div>
+<productdetails pr-id="{{ manif.id }}" pr-name="{{ manif.titre }}" pr-price="0" />
 {% endblock %}
