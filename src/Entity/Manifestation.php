@@ -31,6 +31,9 @@ class Manifestation
     #[ORM\Column(length: 255)]
     private ?string $horaire = null;
 
+    #[ORM\Column]
+    private ?int $tarif = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -107,6 +110,18 @@ class Manifestation
     public function setHoraire(string $horaire): self
     {
         $this->horaire = $horaire;
+
+        return $this;
+    }
+
+    public function getTarif(): ?string
+    {
+        return $this->tarif;
+    }
+
+    public function setTarif(int $tarif): self
+    {
+        $this->tarif = $tarif;
 
         return $this;
     }
