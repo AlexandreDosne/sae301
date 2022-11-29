@@ -225,4 +225,31 @@ body .navbar__links:hover {
   color: #0b3f5f;
   text-decoration: underline;
   transition: all 0.2s ease-in-out;
+}
+body form {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body fieldset {
+  border: 1px solid #0b3f5f;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+body .label__mdp {
+  padding-top: 1rem;
+}
+body .btn__login {
+  background-color: #0b3f5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
