@@ -2,10 +2,13 @@
 
 {% block body %}
 <div class="container">
-    <div class="filtre">
-    {# PENSE A LE FAIRE EN JS #}
-    {# <h3>filtre</h3> #}
+    
+    <div class="navbar__toggle" id="menu-filtre">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
+
     <div id="listing" class="row">
     <h1 class="titre__listing">Listing des événements</h1>
         {% for manif in manifestations %}

@@ -85,6 +85,74 @@
   padding: 0.4rem 0.4rem 0.4rem 0.4rem;
 }
 
+.container__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.carte__details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  border-radius: 15px;
+  box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -1px 10px 24px -8px rgba(0, 0, 0, 0.38);
+}
+
+.titre__details {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details__date {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.details__genre {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.details__casting {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.details__description {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn__bodydetails {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.btn__acheter {
+  padding-top: 2rem;
+  text-decoration: none;
+  color: #fff;
+  border: rgba(0, 0, 0, 0.526) 1px solid;
+  border-radius: 7px;
+  background-color: #0b3f5f;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;

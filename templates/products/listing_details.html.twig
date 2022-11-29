@@ -1,19 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="container">
-    <img id="listingDetailAffiche" src="/assets/img/affiches/{{ manif.affiche }}.jpg" class="card-img-top"
+<div class="container__details">
+    <img id="listingDetailAffiche" src="/assets/img/affiches/{{ manif.affiche }}.jpg" class="img__details"
         alt="Affiche de {{ manif.titre }}">
-    <h1>{{ manif.titre }}</h1>
-    <p>
-        Date : {{ manif.horaire }}<br />
-        Genre : {{ manif.genre }}<br />
-        Casting : {{ manif.casting }}<br />
-        <hr>
-        {{ manif.description }}
-    </p>
-    <hr>
-    <a href="/listing">Retour à la liste</a>
-    <a href="/cart/add/{{ manif.id }}">Acheter un ticket</a>
+    <div class="carte__details">
+        <h1 class="titre__details">{{ manif.titre }}</h1>
+        <p class="details">
+            <span class="details__date">
+                Date : {{ manif.horaire }}
+            </span>
+            <span class="details__genre">
+                Genre : {{ manif.genre }}
+            </span>
+            <span class="details__casting">
+                Casting : {{ manif.casting }}
+            </span>
+            <span class="details__description">
+                {{ manif.description }}
+            </span>
+        </p>
+    </div>
+    <div class="btn__bodydetails">
+        <a href="/cart/add/{{ manif.id }}" class="btn__acheter">Acheter un ticket</a>
+    </div>
+    <div class="btn__bodydetails">
+    <a href="/listing" class="btn__acheter">Retour à la liste</a>
+    </div>
 </div>
 {% endblock %}
