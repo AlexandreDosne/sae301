@@ -162,6 +162,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16pt;
   background-color: #fff;
+  overflow-x: hidden;
 }
 body navbar {
   background: #FFF;
@@ -303,4 +304,31 @@ body .login__carte .btn__register:hover {
 }
 body .login__carte .crea__text {
   padding: 1rem;
+}
+body .full__image {
+  width: 99vw;
+  height: auto;
+  filter: blur(0.25rem);
+}
+body .top__image {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.399);
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: auto;
+}
+body .top__image .phrase__accueil {
+  padding-top: 5rem;
+  margin-left: 10rem;
+  color: #FFF;
+  right: 30%;
+  font-size: 28pt;
+}
+body .top__image .text__accueil {
+  padding-bottom: 5rem;
+  margin-left: 10rem;
+  color: #FFF;
+  right: 30%;
+  font-size: 18pt;
 }/*# sourceMappingURL=style.css.map */

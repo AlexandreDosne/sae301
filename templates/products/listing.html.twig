@@ -10,7 +10,7 @@
     </div>
 
     <div id="listing" class="row">
-    <h1 class="titre__listing">Evènement à venir</h1>
+    <h1 class="titre__listing">Evénements à venir</h1>
         {% for manif in manifestations %}
         <div class="event__listing">
             <div class="card__event">
@@ -19,11 +19,12 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ manif.titre }}</h5>
                     <p class="card-text">
-                        <em class="h6">{{ manif.horaire }}</em><br />
+                        <em class="h6"> {{ manif.horaire }}</em><br />
                         <span class="h5">{{ manif.description }}</span>
                     </p>
                 </div>
                 <ul class="list-info">
+                    <li class="list-group-item">Prix: {{manif.tarif}}€</li> <br />
                     <li class="list-group-item">Genre: {{ manif.genre }}</li>  <br />
                     <li class="list-group-item">Casting: {{ manif.casting }}</li>
                 </ul>

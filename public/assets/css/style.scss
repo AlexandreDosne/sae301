@@ -4,13 +4,14 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-family     : Arial, Helvetica, sans-serif;
     font-size       : 16pt;
     background-color: #fff;
-
+    overflow-x: hidden;
     navbar{
         
         background: #FFF;
@@ -157,5 +158,31 @@ body {
                 padding: 1rem;
             }
         }
-        
+    .full__image{
+        width: 99vw;
+        height: auto;
+        filter: blur(0.25rem);
+    }
+    .top__image{
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.399);
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        height: auto;
+        .phrase__accueil{
+            padding-top: 5rem;
+            margin-left: 10rem;
+           color: #FFF;
+           right: 30%;
+           font-size: 28pt;
+        }
+        .text__accueil{
+            padding-bottom: 5rem;
+            margin-left: 10rem;
+           color: #FFF;
+           right: 30%;
+           font-size: 18pt;
+        }
+    }
 }
