@@ -31,5 +31,10 @@
     <a href="/listing" class="btn__acheter">Retour à la liste</a>
     </div>
 </div>
-<productdetails pr-id="{{ manif.id }}" pr-name="{{ manif.titre }}" pr-price="0" />
+<productdetails pr-id="{{ manif.id }}" pr-name="{{ manif.titre }}" pr-price="{{ manif.tarif }}" />
+{% endblock %}
+
+{% block post_body_js %}
+    <script src="{{ asset('assets/js/js.cookie.min.js') }}"></script>
+    <script src="{{ asset('assets/js/addToCart.min.js') }}"></script>
 {% endblock %}

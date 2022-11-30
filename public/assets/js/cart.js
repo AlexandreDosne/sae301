@@ -2,8 +2,6 @@
 const elCartList = document.getElementById('cartList');
 const elPrixTotal = document.getElementById('prixTotal');
 
-Cookies.set('cart', '[{"id": 1, "titre": "TITRE", "tarif": 10, "quantite": 2}, {"id": 2, "titre": "AUTRE", "tarif": 12, "quantite": 1}]', { path: '/' });
-
 if (Cookies.get('cart') != undefined)
 {
     AfficherPanier();
@@ -17,9 +15,11 @@ function AfficherPanier()
     panier.forEach(el =>
     {
         let ss = (el.quantite > 1) ? 's' : '';
-        elCartList.innerHTML += `<li>${el.titre} - ${el.quantite} ticket${ss} (${el.tarif}€)</li>`;
+        let prixFinal = el.tarif * el.quantite;
 
-        prixTotal += el.tarif * el.quantite;
+        elCartList.innerHTML += `<li>${el.titre} - ${el.quantite} ticket${ss} (${prixFinal}€)</li>`;
+
+        prixTotal += prixFinal;
     });
 
     elPrixTotal.innerText += prixTotal.toString() + '€';
