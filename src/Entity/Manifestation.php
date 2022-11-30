@@ -114,7 +114,7 @@ class Manifestation
         return $this;
     }
 
-    public function getTarif(): ?string
+    public function getTarif(): ?int
     {
         return $this->tarif;
     }
