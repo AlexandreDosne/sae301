@@ -1,22 +1,26 @@
 // @ts-nocheck
-
-const COOKIE_PREFIX = 'cart=';
-const COOKIE_SUFIX = ';path=/';
 const elCartList = document.getElementById('cartList');
+const elPrixTotal = document.getElementById('prixTotal');
 
-// document.cookie = COOKIE_PREFIX + 'null' + COOKIE_SUFIX;
+Cookies.set('cart', '[{"id": 1, "titre": "TITRE", "tarif": 10, "quantite": 2}, {"id": 2, "titre": "AUTRE", "tarif": 12, "quantite": 1}]', { path: '/' });
 
-// JSON des cookies
-var articles = [];
-// Le tableau lisible des articles
-var panier = '';
-
-if (document.cookie.length != 0)
-    articles = JSON.parse(document.cookie);
-
-elCartList.innerHTML = articles;
-
-articles.forEach(element =>
+if (Cookies.get('cart') != undefined)
 {
-    panier += '[' + element + '] ';
-});
+    AfficherPanier();
+}
+
+function AfficherPanier()
+{
+    var panier = JSON.parse(Cookies.get('cart'));
+    var prixTotal = 0;
+
+    panier.forEach(el =>
+    {
+        let ss = (el.quantite > 1) ? 's' : '';
+        elCartList.innerHTML += `<li>${el.titre} - ${el.quantite} ticket${ss} (${el.tarif}€)</li>`;
+
+        prixTotal += el.tarif * el.quantite;
+    });
+
+    elPrixTotal.innerText += prixTotal.toString() + '€';
+}

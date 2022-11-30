@@ -4,9 +4,11 @@
 	<div class="container">
 		<h1>Panier</h1>
 		<ul id="cartList"></ul>
+		<p id="prixTotal">Prix total : </p>
 	</div>
 {% endblock %}
 
 {% block post_body_js %}
+    <script src="{{ asset('assets/js/js.cookie.min.js') }}"></script>
     <script src="{{ asset('assets/js/cart.min.js') }}"></script>
 {% endblock %}
