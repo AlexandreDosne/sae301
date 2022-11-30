@@ -34,7 +34,7 @@ class ListingController extends AbstractController
         );
     }
 
-    // Cette route permet de voir une manif en detail
+    // Cette route permet de voir une manif en détail
     #[Route("/listing/{id}", name: "app_listing_details")]
     public function listingDetails(int $id, ManifestationRepository $repo): \Symfony\Component\HttpFoundation\Response
     {
