@@ -224,4 +224,58 @@ body {
         width:50px;
         margin:0.5rem;
     }
+    .news__content{
+        padding: 4rem;
+    }
+    .titre__news{
+        padding-left: 1rem;
+        background-color: #0b3f5f32;
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .carte__news{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .img__clock{
+        width: 40px;
+        margin: 0.5rem;
+    }
+    .month__event{
+        padding: 4rem;
+    }
+    .event__title{
+        padding-left: 1rem;
+        background-color: #0b3f5f32;
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .img__calendrier{
+        width: 40px;
+        margin: 0.5rem;
+    }
+    .event__content{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .carte__avenir{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .text__month{
+        background-color:#0b3f5f32 ;
+    }
+    .text__month h3{
+        padding-left: 0.5rem;
+    }
+
+    .text__month p{
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+    }
 }

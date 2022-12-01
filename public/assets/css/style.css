@@ -369,4 +369,57 @@ body .titre__crea {
 body .img__rs {
   width: 50px;
   margin: 0.5rem;
+}
+body .news__content {
+  padding: 4rem;
+}
+body .titre__news {
+  padding-left: 1rem;
+  background-color: rgba(11, 63, 95, 0.1960784314);
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+body .carte__news {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+body .img__clock {
+  width: 40px;
+  margin: 0.5rem;
+}
+body .month__event {
+  padding: 4rem;
+}
+body .event__title {
+  padding-left: 1rem;
+  background-color: rgba(11, 63, 95, 0.1960784314);
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+body .img__calendrier {
+  width: 40px;
+  margin: 0.5rem;
+}
+body .event__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+body .carte__avenir {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+body .text__month {
+  background-color: rgba(11, 63, 95, 0.1960784314);
+}
+body .text__month h3 {
+  padding-left: 0.5rem;
+}
+body .text__month p {
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
