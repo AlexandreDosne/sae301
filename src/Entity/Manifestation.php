@@ -34,6 +34,10 @@ class Manifestation
     #[ORM\Column]
     private ?int $tarif = null;
 
+    #[ORM\ManyToOne(inversedBy: 'manifestations')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Lieu $lieu = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -122,6 +126,18 @@ class Manifestation
     public function setTarif(int $tarif): self
     {
         $this->tarif = $tarif;
+
+        return $this;
+    }
+
+    public function getLieu(): ?Lieu
+    {
+        return $this->lieu;
+    }
+
+    public function setLieu(?Lieu $lieu): self
+    {
+        $this->lieu = $lieu;
 
         return $this;
     }
