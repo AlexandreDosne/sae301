@@ -331,4 +331,42 @@ body .top__image .text__accueil {
   color: #FFF;
   right: 30%;
   font-size: 18pt;
+}
+body .footer__container {
+  background-color: rgba(0, 0, 0, 0.736);
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+body .footer__container a {
+  text-decoration: none;
+  color: #FFF;
+}
+body .terms {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+body .titre__terms {
+  padding-bottom: 0.5rem;
+}
+body .rs {
+  padding: 1rem;
+}
+body .titre__rs {
+  padding-bottom: 0.5rem;
+}
+body .crea {
+  padding-top: 1rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .titre__crea {
+  padding-bottom: 0.5rem;
+}
+body .img__rs {
+  width: 50px;
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

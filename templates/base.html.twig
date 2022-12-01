@@ -53,8 +53,29 @@
             </ul>
         </div>
     </navbar>
-        {% block body %}{% endblock %}
         <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+        {% block body %}{% endblock %}
+
+        <footer>
+        <div class="footer__container">
+            <div class="terms">
+                <h3 class="titre__terms">Footer</h3>
+                <a class="terms__a" href="#">Mentions Légales</a><br />
+                <a class="terms__a" href="#">Conditions générales de ventes</a>
+            </div>
+            <div class="rs">
+                <h3 class="titre__rs">réseaux sociaux</h3>
+                <a href="#"><img class="img__rs" src="/assets/img/facebook.png" alt="facebook avigon"></a>
+                <a href="#"><img class="img__rs" src="/assets/img/instagram.png" alt="instagram avigon"></a>
+                <a href="#"><img class="img__rs" src="/assets/img/twitter.png" alt="twitter avigon"></a>
+            </div>
+            <div class="crea">
+                <h3 class="titre__crea">créateurs</h3>
+                <p>Alexandre Dosne</p>
+                <p>Baptiste Cuny</p>
+            </div>
+        </div>
+        </footer>
         {% block post_body_js %}{% endblock %}
     </body>
 </html>

@@ -184,5 +184,44 @@ body {
            right: 30%;
            font-size: 18pt;
         }
+   
+    }
+    .footer__container{
+        background-color: rgba(0, 0, 0, 0.736);
+        color: #FFF;
+        display: flex;
+        justify-content: space-between;      
+        height: 20vh;
+    }
+    .footer__container a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .terms{
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    .titre__terms{
+        padding-bottom: 0.5rem;
+    }
+    .rs{
+        padding: 1rem;
+    }
+    .titre__rs{
+        padding-bottom: 0.5rem;
+    }
+    .crea{
+        padding-top: 1rem;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .titre__crea{
+        padding-bottom: 0.5rem;
+    }
+    .img__rs{
+        width:50px;
+        margin:0.5rem;
     }
 }
