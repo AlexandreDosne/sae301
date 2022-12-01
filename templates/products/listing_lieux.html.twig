@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <div id="listing" class="row">
+        <h1 class="titre__listing">Nos Salles</h1>
+        {% for lieu in lieux %}
+        <div class="event__listing">
+            <div class="card__event">
+                <div class="card-body">
+                    <h5 class="card-title">{{ lieu.nom }}</h5>
+                    <p class="card-text">
+                        <em class="h6">{{ lieu.adresse }}</em><br />
+                        <span class="h5">{{ lieu.capacite }} places</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

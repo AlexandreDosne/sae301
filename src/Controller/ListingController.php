@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\LieuRepository;
 use App\Repository\ManifestationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -47,6 +48,16 @@ class ListingController extends AbstractController
         return $this->render(
             'products/listing_details.html.twig',
             ['manif' => $manif]
+        );
+    }
+
+    // Cette route liste les lieux
+    #[Route("/nos-salles", name: "app_listing_details")]
+    public function listingLieux(LieuRepository $repo): \Symfony\Component\HttpFoundation\Response
+    {
+        return $this->render(
+            'products/listing_lieux.html.twig',
+            ['lieux' => $repo->findAll()]
         );
     }
 }
