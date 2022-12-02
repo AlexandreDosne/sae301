@@ -8,6 +8,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: ManifestationRepository::class)]
 class Manifestation
 {
+    private const AFFICHE_DIR = '/assets/img/affiches/';
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -81,6 +83,9 @@ class Manifestation
 
     public function getCasting(): ?string
     {
+        if (empty($this->casting))
+            return 'N/A';
+
         return $this->casting;
     }
 
@@ -94,9 +99,9 @@ class Manifestation
     public function getAffiche(): ?string
     {
         if (empty($this->affiche))
-            return 'placeholder';
+            return $this::AFFICHE_DIR . 'placeholder.jpg';
 
-        return $this->affiche;
+        return $this::AFFICHE_DIR . $this->affiche . '.jpg';
     }
 
     public function setAffiche(?string $affiche): self

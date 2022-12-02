@@ -2,7 +2,7 @@
 
 {% block body %}
 <div class="container__details">
-    <img id="listingDetailAffiche" src="/assets/img/affiches/{{ manif.affiche }}.jpg" class="img__details"
+    <img id="listingDetailAffiche" src="{{ manif.affiche }}" class="img__details"
         alt="Affiche de {{ manif.titre }}">
     <div class="carte__details">
         <h1 class="titre__details">{{ manif.titre }}</h1>

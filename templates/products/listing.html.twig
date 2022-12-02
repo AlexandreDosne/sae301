@@ -14,7 +14,7 @@
         {% for manif in manifestations %}
         <div class="event__listing">
             <div class="card__event">
-                <img src="/assets/img/affiches/{{ manif.affiche }}.jpg" class="card-img-top"
+                <img src="{{ manif.affiche }}" class="card-img-top"
                     alt="Affiche de {{ manif.titre }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ manif.titre }}</h5>
