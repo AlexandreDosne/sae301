@@ -3,7 +3,7 @@
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
-<form method="post">
+<form class="form__login" method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
@@ -20,13 +20,11 @@
             <a class="btn__register" href="/register">Créer un compte</a>
         </div>
         <div class="login__connexion">
-        <h3>Connecter vous <br />à Avignon Tickets</h3>
-        <input placeholder="Email..." type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-        <input placeholder="Mot de passe..." type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+            <h3>Connecter vous <br />à Avignon Tickets</h3>
+            <input placeholder="Email..." type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+            <input placeholder="Mot de passe..." type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
     
-        <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
     
 
     {#
@@ -40,9 +38,9 @@
         </div>
     #}
 
-        <button class="btn__login" type="submit">
-            Se connecter
-        </button>
+            <button class="btn__login" type="submit">
+                Se connecter
+            </button>
         </div>
     </div>
 </form>

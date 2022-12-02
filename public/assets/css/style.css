@@ -227,7 +227,7 @@ body .navbar__links:hover {
   text-decoration: underline;
   transition: all 0.2s ease-in-out;
 }
-body form {
+body .form__login {
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -286,6 +286,7 @@ body .login__carte .btn__login {
   cursor: pointer;
   font-size: 15pt;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 body .login__carte .btn__register {
   background-color: transparent;
@@ -297,9 +298,16 @@ body .login__carte .btn__register {
   cursor: pointer;
   font-size: 15pt;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 body .login__carte .btn__register:hover {
   background-color: #0b3f5f;
+  transition: all 0.3s ease-in-out;
+}
+body .login__carte .btn__login:hover {
+  background-color: transparent;
+  color: #000;
+  border: #000 solid 1px;
   transition: all 0.3s ease-in-out;
 }
 body .login__carte .crea__text {
@@ -422,4 +430,93 @@ body .text__month h3 {
 body .text__month p {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
+}
+body .container__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: grey solid 1px;
+  border-radius: 10px;
+  padding-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .register__carte {
+  display: flex;
+}
+body .register__carte input {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 5px;
+  width: 20rem;
+  border: none;
+  outline: none;
+}
+body .register__carte input::-moz-placeholder {
+  color: #FFF;
+}
+body .register__carte input:-ms-input-placeholder {
+  color: #FFF;
+}
+body .register__carte input::placeholder {
+  color: #FFF;
+}
+body .btn__register {
+  background-color: transparent;
+  color: #fff;
+  border: #0b3f5f solid 1px;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+body .btn__register:hover {
+  background-color: #0b3f5f;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+body .register__login {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #C49862;
+}
+body .btn__creercompte {
+  background-color: #0b3f5f;
+  color: #fff;
+  border: #0b3f5f solid 1px;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
