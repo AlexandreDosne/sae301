@@ -52,7 +52,7 @@ class ListingController extends AbstractController
     }
 
     // Cette route liste les lieux
-    #[Route("/nos-salles", name: "app_listing_details")]
+    #[Route("/nos-salles", name: "app_listing_lieux")]
     public function listingLieux(LieuRepository $repo): \Symfony\Component\HttpFoundation\Response
     {
         return $this->render(
