@@ -163,7 +163,9 @@ body {
   font-size: 16pt;
   background-color: #fff;
   overflow-x: hidden;
-  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body navbar {
   background: #FFF;
@@ -342,7 +344,7 @@ body .top__image .text__accueil {
   font-size: 18pt;
 }
 body footer {
-  flex-shrink: 0;
+  margin-top: auto;
 }
 body .footer__container {
   background-color: rgba(0, 0, 0, 0.736);
