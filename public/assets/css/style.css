@@ -624,4 +624,44 @@ body .btn__creercompte {
   body #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  body .top__image {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.399);
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    height: 31vh;
+  }
+  body .titre__news {
+    width: 65%;
+  }
+  body .carte__news img {
+    width: 75vw;
+    height: auto;
+  }
+  body .event__title {
+    width: 80%;
+  }
+  body .event__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .event__content .event__under {
+    display: flex;
+    flex-direction: row;
+  }
+  body .terms {
+    padding-left: 2rem;
+  }
+  body .img__rs {
+    width: 25px;
+    margin: 0.3rem;
+  }
+  body .crea {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */
