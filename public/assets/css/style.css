@@ -543,4 +543,85 @@ body .btn__creercompte {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 960px) {
+  body .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+  body .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  body .navbar__menu.active {
+    background: #f3f2f2;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 68vh;
+    font-size: 1.6rem;
+  }
+  body #navbar__logo {
+    padding-left: 1rem;
+    z-index: 99;
+  }
+  body .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  body .navbar__item {
+    width: 100%;
+    margin: -1.8rem;
+  }
+  body .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  body .navbar__btn {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  body .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 45px;
+    margin: 0;
+    margin-bottom: -28px;
+  }
+  body #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+  body .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+    background: rgb(15, 14, 14);
+  }
+  body #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  body #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }/*# sourceMappingURL=style.css.map */
