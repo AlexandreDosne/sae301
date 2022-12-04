@@ -3,18 +3,18 @@
 {% block body %}
 <div class="checkout">
     <div class="container__checkout">
-        <h3>Information Paiment</h3>
+        <h3>Informations de Paiement</h3>
         <form action="/cart/confirm" method="post" autocomplete="off">
             <label for="nomComplet">Titulaire de la carte</label>
-            <input type="text" name="nomComplet" id="nomComplet" placeholder="Jean Dupont...">
+            <input type="text" name="nomComplet" id="nomComplet" placeholder="Jean Dupont..." required>
 
             <label for="adresse">Adresse de livraison</label>
-            <input type="text" name="adresse" id="adresse" placeholder="...">
+            <input type="text" name="adresse" id="adresse" placeholder="..." required>
 
             <label for="email">Email de confirmation</label>
-            <input type="email" name="email" id="email" placeholder="name@domain.com...">
+            <input type="email" name="email" id="email" placeholder="name@domain.com..." required>
 
-            <button type="submit">Confirmer et procéder au payement</button>
+            <button type="submit">Confirmer et procéder au paiement</button>
         </form>
     </div>
 </div>

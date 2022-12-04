@@ -15,7 +15,7 @@ panier.forEach(el =>
     prixTotal += prixFinal;
 });
 
-elPrixTotal.innerText += 'Prix total : ' + prixTotal.toString() + '€';
+elPrixTotal.innerText = 'Prix total : ' + prixTotal.toString() + '€';
 
 document.getElementById('retourSite').addEventListener('click', () =>
 {
