@@ -244,9 +244,12 @@ body .login__carte {
   border: grey solid 1px;
   border-radius: 10px;
   flex-direction: row;
+  justify-content: center;
+  width: 105vh;
+  margin-bottom: 4rem;
 }
 body .login__carte .login__creation {
-  padding: 6rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -477,6 +480,7 @@ body form div {
 }
 body .register__carte {
   display: flex;
+  margin-left: 1rem;
 }
 body .register__carte input {
   margin: 1rem;
@@ -543,6 +547,18 @@ body .btn__creercompte {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
+}
+body .btn__creercompte:hover {
+  background-color: transparent;
+  color: #0b3f5f;
+  border: #0b3f5f solid 1px;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 15pt;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 960px) {
   body .navbar__container {
@@ -663,5 +679,17 @@ body .btn__creercompte {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  body .login__carte .login__creation {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #C49862;
+  }
+  body .login__carte .login__creation h3 p {
+    width: 13rem;
   }
 }/*# sourceMappingURL=style.css.map */
