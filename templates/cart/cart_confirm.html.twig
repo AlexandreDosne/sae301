@@ -1,13 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="container">
-    <p>Le payement a été réalisé avec succès, un mail de confirmation vous a été envoyé pour confirmer la date de
-        livraison.</p>
-    <p>Adresse de livraison : {{ adresse }}</p>
-    <ul id="cartList"></ul>
-    <p id="prixTotal">Prix total : </p>
-    <a id="retourSite" href="/">Retour au site</a>
+<div class="confirmation">
+    <div class="container__confirmation">
+        <p>Le payement confirmer un mail de confirmation a été envoyer</p>
+        <p>Adresse de livraison : {{ adresse }}</p>
+        <ul id="cartList"></ul>
+        <p id="prixTotal">Prix total : </p>
+        <a id="retourSite" href="/">Retour au site</a>
+    </div>
 </div>
 {% endblock %}
 

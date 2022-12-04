@@ -1,12 +1,25 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<div class="container">
-		<h1>Panier</h1>
-		<ul id="cartList"></ul>
-		<p id="prixTotal">Prix total : </p>
+<div class="cart">
+	<div class="cart__container">
+		<div class="cart__titre">
+			<h1>Panier</h1>
+		</div>
+		<div class="cart__legend">
+			<h3>titre</h3>
+			<h3>nombre de tickets</h3>
+		</div>
+		<div class="cart__table">
+			<ul id="cartList"></ul>
+			<div class="cart__total">
+				<p id="prixTotal"></p>
+				<a id="btnCheckout" href="/cart/checkout">Commander</a>
+			</div>
+		</div>
 	</div>
-	<a id="btnCheckout" href="/cart/checkout">Commander</a>
+	
+</div>
 {% endblock %}
 
 {% block post_body_js %}

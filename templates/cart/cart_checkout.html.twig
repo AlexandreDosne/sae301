@@ -1,19 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="container">
-    <p>Veuillez renseigner les informations suivantes pour procéder au payement.</p>
-    <form action="/cart/confirm" method="post" autocomplete="off">
-        <label for="nomComplet">Titulaire de la carte</label>
-        <input type="text" name="nomComplet" id="nomComplet" placeholder="Jean Dupont...">
+<div class="checkout">
+    <div class="container__checkout">
+        <h3>Information Paiment</h3>
+        <form action="/cart/confirm" method="post" autocomplete="off">
+            <label for="nomComplet">Titulaire de la carte</label>
+            <input type="text" name="nomComplet" id="nomComplet" placeholder="Jean Dupont...">
 
-        <label for="adresse">Adresse de livraison</label>
-        <input type="text" name="adresse" id="adresse" placeholder="...">
+            <label for="adresse">Adresse de livraison</label>
+            <input type="text" name="adresse" id="adresse" placeholder="...">
 
-        <label for="email">Email de confirmation</label>
-        <input type="email" name="email" id="email" placeholder="name@domain.com...">
+            <label for="email">Email de confirmation</label>
+            <input type="email" name="email" id="email" placeholder="name@domain.com...">
 
-        <button type="submit">Confirmer et procéder au payement</button>
-    </form>
+            <button type="submit">Confirmer et procéder au payement</button>
+        </form>
+    </div>
 </div>
 {% endblock %}
