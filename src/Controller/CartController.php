@@ -17,10 +17,21 @@ class CartController extends AbstractController
         );
     }
 
-    // #[Route("/cart/add/{id}", name: "app_cart_add")]
-    // public function cartAdd(int $id, ManifestationRepository $repo): \Symfony\Component\HttpFoundation\Response
-    // {
-    //     // TODO: Add item to cart
-    //     return $this->redirectToRoute('app_cart');
-    // }
+    #[Route("/cart/checkout", name: "app_cart_checkout")]
+    public function cartCheckout(): \Symfony\Component\HttpFoundation\Response
+    {
+        return $this->render(
+            'cart/cart_checkout.html.twig',
+            []
+        );
+    }
+
+    #[Route("/cart/confirm", name: "app_cart_confirm")]
+    public function cartConfirm(): \Symfony\Component\HttpFoundation\Response
+    {
+        return $this->render(
+            'cart/cart_confirm.html.twig',
+            []
+        );
+    }
 }

@@ -2,11 +2,10 @@
 const elCartList = document.getElementById('cartList');
 const elPrixTotal = document.getElementById('prixTotal');
 
-if (Cookies.get('cart') != undefined)
-{
-    AfficherPanier();
-}
+AfficherPanier();
 
+
+// Event listeners pour les boutons plus et moins (delegation d'event)
 document.addEventListener('click', function (event)
 {
     if (!event.target.matches('.jsCartPlus')) return;
@@ -21,10 +20,19 @@ document.addEventListener('click', function (event)
     ModifierQty(event.target.getAttribute('targ-id'), false);
 });
 
+
+// Definition de fonctions
 function AfficherPanier()
 {
     elCartList.innerHTML = '';
     elPrixTotal.innerText = '';
+
+    if (Cookies.get('cart') == undefined || Cookies.get('cart').length <= 2)
+    {
+        elPrixTotal.innerText += 'Votre panier est vide.';
+        document.getElementById('btnCheckout').hidden = true;
+        return;
+    }
 
     var panier = JSON.parse(Cookies.get('cart'));
     var prixTotal = 0;
@@ -42,10 +50,10 @@ function AfficherPanier()
     if (prixTotal == 0)
         elPrixTotal.innerText += 'Votre panier est vide.';
     else
-        elPrixTotal.innerText += prixTotal.toString() + '€';
+        elPrixTotal.innerText += 'Prix total : ' + prixTotal.toString() + '€';
 }
 
-// Incremente la quantite d'un article si present
+// Incremente ou decremente la quantite d'un article si present
 function ModifierQty(cid, plus = true)
 {
     let cookies = JSON.parse(Cookies.get('cart'));

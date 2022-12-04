@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <p>Le payement a été réalisé avec succès, un mail de confirmation vous a été envoyé pour confirmer la date de
+        livraison.</p>
+    <a href="/">Retour au site</a>
+</div>
+{% endblock %}
+
+{% block post_body_js %}
+<script src="{{ asset('assets/js/js.cookie.min.js') }}"></script>
+<script>Cookies.remove('cart');</script>
+{% endblock %}
