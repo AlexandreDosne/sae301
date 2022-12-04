@@ -4,11 +4,14 @@
 <div class="container">
     <p>Le payement a été réalisé avec succès, un mail de confirmation vous a été envoyé pour confirmer la date de
         livraison.</p>
-    <a href="/">Retour au site</a>
+    <p>Adresse de livraison : {{ adresse }}</p>
+    <ul id="cartList"></ul>
+    <p id="prixTotal">Prix total : </p>
+    <a id="retourSite" href="/">Retour au site</a>
 </div>
 {% endblock %}
 
 {% block post_body_js %}
 <script src="{{ asset('assets/js/js.cookie.min.js') }}"></script>
-<script>Cookies.remove('cart');</script>
+<script src="{{ asset('assets/js/listCart.min.js') }}"></script>
 {% endblock %}
