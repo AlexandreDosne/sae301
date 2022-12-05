@@ -24,3 +24,6 @@
 
 # PHP version for symfoni CLI
 /.php-version
+
+# IDEA Project files
+/.idea
