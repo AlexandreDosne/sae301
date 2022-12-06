@@ -7,9 +7,14 @@
     <div class="carte__details">
         <h1 class="titre__details">{{ manif.titre }}</h1>
         <p class="details">
+        {# important #}
             <span class="details__date">
-                Tarif ticket : {{ manif.tarif }}€
+                Tarif ticket : {{ manif.tarif }}€ 
             </span>
+            <div class="btn__bodydetails">
+                    <a href="#" id="btnAcheterTicket" class="btn__acheter">Acheter un ticket</a>
+                </div>
+            {# description #}
             <span class="details__date">
                 Date : {{ manif.horaire }}
             </span>
@@ -18,14 +23,11 @@
             </span>
             <span class="details__casting">
                 Casting : {{ manif.casting }}
-            </span>
+            </span> <br />  
             <span class="details__description">
                 {{ manif.description }}
             </span>
         </p>
-    </div>
-    <div class="btn__bodydetails">
-        <a href="#" id="btnAcheterTicket" class="btn__acheter">Acheter un ticket</a>
     </div>
     <div class="btn__bodydetails">
     <a href="/listing" class="btn__acheter">Retour à la liste</a>

@@ -7,7 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-            <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet"/>
         {% endblock %}
 
         {% block javascripts %}
@@ -40,6 +40,9 @@
                         </li>
                     {% endif %}
                     {% if app.user %}
+                        <li class="navbar__item">
+                            <a class="navbar__links" href="/profile">Profil</a>
+                        </li>
                         <li  class="navbar__item">
                             <a class="navbar__links" href="/logout">Se déconnecter</a>
                         </li>
