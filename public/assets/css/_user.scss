@@ -1,0 +1,53 @@
+.container__profil{
+    margin: 3rem;
+
+    p{
+        padding: 1rem;
+    }
+
+    .historique{
+        box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        margin: 1rem;
+        p{
+            padding: 1rem;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                padding: 1rem;
+                border-bottom: 1px solid #ccc;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &:nth-child(odd){
+                    background-color: #f2f2f2;
+                }
+                &:nth-child(even){
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .btn__profil{
+        justify-items: center;
+        margin: 1rem;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 20px   ;
+        background-color: #0b3f5f;
+        padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+        transition: all ease-in-out 0.3s;
+        width: 23vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 36%;
+        &:hover{
+            background-color: transparent;
+            border: #0b3f5f 0.5px solid;
+            color:#0b3f5f;
+        }
+    }
+}
