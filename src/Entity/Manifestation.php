@@ -59,7 +59,7 @@ class Manifestation
 
     public function getGenre(): ?string
     {
-        return $this->genre;
+        return ucfirst($this->genre);
     }
 
     public function setGenre(string $genre): self

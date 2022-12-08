@@ -2,15 +2,19 @@
 
 {% block body %}
 <div class="container">
-    
-
     <div id="listing" class="row">
-    <h1 class="titre__listing">Evénements à venir</h1>
+        <h1 class="titre__listing">Evénements à venir</h1>
+
+        <button id="jsCatAll">Tout</button>
+        <button id="jsCat0">Théâtre</button>
+        <button id="jsCat1">Concert</button>
+        <button id="jsCat2">Spectacle</button>
+        <button id="jsCat3">Exposition</button>
+
         {% for manif in manifestations %}
-        <div class="event__listing">
+        <div class="event__listing cat{{ manif.genre }}">
             <div class="card__event">
-                <img src="{{ manif.affiche }}" class="card-img-top"
-                    alt="Affiche de {{ manif.titre }}">
+                <img src="{{ manif.affiche }}" class="card-img-top" alt="Affiche de {{ manif.titre }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ manif.titre }}</h5>
                     <p class="card-text">
@@ -20,7 +24,7 @@
                 </div>
                 <ul class="list-info">
                     <li class="list-group-item">Prix: {{manif.tarif}}€</li> <br />
-                    <li class="list-group-item">Genre: {{ manif.genre }}</li>  <br />
+                    <li class="list-group-item">Genre: {{ manif.genre }}</li> <br />
                     <li class="list-group-item">Casting: {{ manif.casting }}</li>
                 </ul>
                 <div class="btn__body">
@@ -31,4 +35,8 @@
         {% endfor %}
     </div>
 </div>
+{% endblock %}
+
+{% block post_body_js %}
+<script src="{{ asset('assets/js/listFilter.min.js') }}"></script>
 {% endblock %}
