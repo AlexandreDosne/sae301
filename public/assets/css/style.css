@@ -38,7 +38,6 @@
 }
 
 .event__listing {
-  display: flex;
   margin-left: 7rem;
   margin-right: 7rem;
   justify-content: center;
