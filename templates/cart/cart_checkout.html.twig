@@ -14,8 +14,16 @@
             <label for="email">Email de confirmation</label>
             <input type="email" name="email" id="email" placeholder="name@domain.com..." required>
 
+            <input type="hidden" name="cartcontent" id="cartcontent" value="">
+            <input type="hidden" name="cartprice" id="cartprice" value="">
+
             <button type="submit">Confirmer et procéder au paiement</button>
         </form>
     </div>
 </div>
+{% endblock %}
+
+{% block post_body_js %}
+<script src="{{ asset('assets/js/js.cookie.min.js') }}"></script>
+<script src="{{ asset('assets/js/cartCheckout.js') }}"></script>
 {% endblock %}

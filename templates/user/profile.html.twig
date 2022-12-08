@@ -1,7 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="container">
-        <p>{{ user.prenom }} {{ user.nom }}</p>
+<div class="container">
+    <h1>Profil</h1>
+    <p>Nom complet : {{ user.prenom }} {{ user.nom }}</p>
+    <div>
+        <p>Historique d'achats</p>
+        <ul>
+            {% for achat in achatList %}
+            {# <li>{{ achat.date|date("m/d/Y à H:i") }} - {% if achat.content|length > 20 %}{{ achat.content|slice(0, 20) }}...{% else %}{{ achat.content }}{% endif %} - {{ achat.montant }}€</li> #}
+            <li>{{ achat.date|date("m/d/Y à H:i") }} - {{ achat.content }} - {{ achat.montant }}€</li>
+            {% endfor %}
+        </ul>
     </div>
+</div>
 {% endblock %}

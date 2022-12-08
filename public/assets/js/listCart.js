@@ -5,6 +5,8 @@ const elPrixTotal = document.getElementById('prixTotal');
 var panier = JSON.parse(Cookies.get('cart'));
 var prixTotal = 0;
 
+Cookies.remove('cart');
+
 panier.forEach(el =>
 {
     let ss = (el.quantite > 1) ? 's' : '';
@@ -16,8 +18,3 @@ panier.forEach(el =>
 });
 
 elPrixTotal.innerText = 'Prix total : ' + prixTotal.toString() + '€';
-
-document.getElementById('retourSite').addEventListener('click', () =>
-{
-    Cookies.remove('cart');
-});
