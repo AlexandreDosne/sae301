@@ -4,13 +4,13 @@
 <div class="container">
     <div id="listing" class="row">
         <h1 class="titre__listing">Evénements à venir</h1>
-
-        <button id="jsCatAll">Tout</button>
-        <button id="jsCat0">Théâtre</button>
-        <button id="jsCat1">Concert</button>
-        <button id="jsCat2">Spectacle</button>
-        <button id="jsCat3">Exposition</button>
-
+            <div class="listing__filter" id="filter">
+                <button class="btn__filter" id="jsCatAll">Tout</button>
+                <button class="btn__filter" id="jsCat0">Théâtre</button>
+                <button class="btn__filter" id="jsCat1">Concert</button>
+                <button class="btn__filter" id="jsCat2">Spectacle</button>
+                <button class="btn__filter" id="jsCat3">Exposition</button>
+            </div>
         {% for manif in manifestations %}
         <div class="event__listing cat{{ manif.genre }}">
             <div class="card__event">
