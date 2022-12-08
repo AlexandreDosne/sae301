@@ -440,7 +440,60 @@ body {
     }
 
      
-    @media  screen and (max-width: 960px) {
+    @media  screen and (max-width: 1000px) {
+        .footer__container{
+            background-color: rgba(0, 0, 0, 0.736);
+            color: #FFF;
+            display: flex;
+            justify-content: space-between;      
+            height: 9vh;
+        }
+        .carte__avenir {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            align-items: center;
+        }
+        .login__carte {
+            display: flex;
+            border: grey solid 1px;
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            width: 31vh;
+            /* margin-bottom: -148rem; */
+        }
+        .container__register {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: grey solid 1px;
+            border-radius: 10px;
+            margin-top: 5rem;
+            margin-bottom: 8rem;
+            margin-left: 12rem;
+            margin-right: 12rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2vh;
+        }
+        .register__login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #C49862;
+            width: 100%;
+            height: 30vh;
+            justify-content: center;
+        }
+
             .navbar__container{
                 display: flex;
                 justify-content: space-between;
@@ -527,7 +580,7 @@ body {
                 position: absolute;
                 top: 14%;
                 width: 100%;
-                height: 31vh;
+                height: 13vh;
                 
             }
             //a retravailler
@@ -791,5 +844,6 @@ body {
         .container__confirmation p{
             margin: 1rem;
         }
+        
 }       
         
